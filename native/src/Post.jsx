@@ -12,7 +12,8 @@ export default class Post extends React.Component{
 
     this.state={
       results: [],
-      filtered : []
+      filtered : [],
+      isFiltered: false,
     }
   }
 
@@ -38,12 +39,24 @@ export default class Post extends React.Component{
 
   }
 
-  render(){
-    return(
-      <View>
-        <FlatListPost results={this.state.results} filteredResults={this.state.filtered} handleFilter={this.handleFilter}/>
-      </View>
+  resetFilter(){
+    this.setState({isFiltered: false})
+  }
 
-    )
+
+  render(){
+    if( this.state.isFiltered === false){
+      return(
+        <View>
+          <FlatListPost results={this.state.results} handleFilter={this.handleFilter} setFiltered={this.resetFilter}/>
+        </View>
+      )
+    }else{
+      return(
+      <View>
+        <FlatListPost filteredResults={this.state.filtered} handleFilter={this.handleFilter} setFiltered={this.resetFilter}/>
+      </View>
+      )
+    }
   }
 }

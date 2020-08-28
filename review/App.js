@@ -8,7 +8,7 @@ const data = [
   {name: 'Bishop', year: 1986,img:'https://upload.wikimedia.org/wikipedia/en/4/49/Bishop_%28Alien%29.png'},
   {name: 'Johnny 5',year: 1986,img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Johnny5_03.jpg/433px-Johnny5_03.jpg'},
   { name: 'Data', year: 1987,img:'https://upload.wikimedia.org/wikipedia/en/0/09/DataTNG.jpg' },
-  { namee: 'Bender', year: 1999 , img: 'https://upload.wikimedia.org/wikipedia/en/a/a6/Bender_Rodriguez.png'},
+  { name: 'Bender', year: 1999 , img: 'https://upload.wikimedia.org/wikipedia/en/a/a6/Bender_Rodriguez.png'},
   { name: 'Marvin', year: 2005 ,img: 'hhttps://upload.wikimedia.org/wikipedia/en/c/cb/Marvin_%28HHGG%29.jpg'},
   { name: 'Astro Boy', year: 2009, img: 'https://upload.wikimedia.org/wikipedia/en/f/f7/AstroBoy%28CGI%29.jpg' },
   { name: 'TARS', year: 2014, img: 'https://compote.slate.com/images/17c75261-6622-4399-a0ae-6316eeff6319.jpg' },

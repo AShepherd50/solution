@@ -6,9 +6,7 @@ import Row from './Row'
 const renderItem = ({item}) => <Row {...item} />
 
 const FlatListPost = props =>(
-    <FlatList renderItem={renderItem} data={props.results} handleFilter={props.handleFilter} />
+    <FlatList renderItem={renderItem} data={props.results} handleFilter={props.handleFilter} setFiltered={this.resetFilter} />
 )
-
-
 
 export default FlatListPost

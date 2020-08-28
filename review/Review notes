@@ -1,0 +1,23 @@
+My suggestions for improving the code are as follows:
+
+- When rendering the list of robots a unique key should be assigned to each robot for easier identifying and to eliminate the error
+
+- It is a small list of data however for future proofing a Flat List should be used instead of Scrollview to optimize performance
+  especially if a larger  data set is used in the future.
+
+-App.js:31 viewRobo function not used
+
+- style objects should be created for elements that have similar/ the same style properties. This will make the code cleaner,
+and will make it faster to code in the future
+
+- App.js:1 Component does not need to be specified in the import field with the React import
+
+-App.js:36 years array not in use and can be deleted
+
+- I would separate the code out of the App.js file adn into its own component file so that it is easier to add on to the app
+in the future and it also allows you to easily add things such as Navigation components of more then one component was needed.
+Adding the navigation component would also allow you to add a header to the screen eliminating the need for an unused View component on
+line 62.
+
+- App.js:73 Unnecessary return statement
+
